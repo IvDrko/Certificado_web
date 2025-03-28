@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EEE9DF;
+}
+
+.encabezado{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    color: #14585D;
+    height: 60px;
+    padding-top: 30px;
+}
+
+.pequenio{
+    font-size: small;
+}
+
+.navegar{
+    background-color: #00B341;
+    padding: 10px;
+    height: 20px;
+}
+
+.flex{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.fondo-imagen{
+    background-image:url(https://previews.123rf.com/images/artinspiring/artinspiring1802/artinspiring180200707/96266652-personas-estudiando-ilustraci%C3%B3n.jpg);
+    text-align: center;
+    height: 300px;
+    padding: 30px;
+}
+
+.contenido-imagen{
+    margin-top: 50px;
+    color: white;
+}
+
+.contenido-imagen h2{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.contenido-imagen p{
+    padding: 20px 5px 10px 5px;
+}
+
+.contenido-imagen button{
+    height: 45px;
+    width: 140px;
+    font-size: large;
+    background-color: #DE9100;
+    color:white;
+    font-weight: bold;
+    border-radius: 10%;
+    border: none;
+    margin-top: 10px;
+}
+
+.alinear{
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenido{
+    margin: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+    height: 100vh;
+    width: 100vh;
+}
+
+.contenido h2{
+    margin:10px;
+    margin-bottom: 25px;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.contenido h3{
+    color:#00B341;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.alo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.columnas{
+    text-align: center;
+}
+
+.formulario{
+    background-color: #444141;
+}

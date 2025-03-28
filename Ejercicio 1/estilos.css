@@ -1,0 +1,86 @@
+body{
+    background-color: #F3E5D8;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+div#container{
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 50px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.fondo-rosa{
+    background-color:#FFF7FC;
+    padding: 20px;
+}
+
+.fondo-rosa h2{
+    color: #603149;
+}
+
+.ingredients{
+    padding:10px;
+}
+
+.instructions{
+    padding: 5px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 40px;
+    color: #834239;
+}
+
+.nutrition table{
+    width: 100%;
+    
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td{
+    border-bottom: 1px solid rgb(119, 117, 117);
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+table tr{
+    border-bottom: 1px solid rgb(119, 117, 117);
+}
+
+li{
+    padding: 5px;
+    margin-bottom: 10px;
+    word-spacing: 2px;
+    margin-top: 10px;
+}
+
+.color{
+    color: #834239;
+    font-weight: bold;
+}
+
+ol::marker{
+    color: #7A5C55;
+}
+
+#preparacion{
+    font-size: 30px;
+    margin-left: 20px;
+}
