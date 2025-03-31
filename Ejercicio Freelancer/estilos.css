@@ -16,7 +16,6 @@ body{
     width: auto;
 }
 
-
 .encabezado{
     display: flex;
     background-color: white;
@@ -101,6 +100,7 @@ nav ul li a{
     text-align: center;
     width: 80%;
     flex-direction: column;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .contenido h2{
