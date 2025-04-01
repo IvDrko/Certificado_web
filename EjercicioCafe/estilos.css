@@ -1,0 +1,193 @@
+:root {
+    --color-primary: #4a3f35;
+    --color-secundary: #d4a373;
+    --color-background: #faf3e0;
+    --font-main: Arial, sans-serif;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--color-primary);
+    background-color: var(--color-background);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-background);
+}
+
+.fondo-imagen {
+    height: 100vh;
+    background-size: cover;
+    background-image: url(https://cafearoma.netlify.app/img/backgroun-image.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.fondo-imagen::before {
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido-imagen{
+    position: relative;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenido-imagen h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease;
+}
+
+.contenido-imagen p{
+    font-size: 1rem;
+}
+
+.contenedor {
+    width: 90%; /* Esto no se porque es necesario */
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+
+.cafes {
+    padding: 4rem 0;
+}
+
+.cafes h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tarjeta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta{
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1) translateY(5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenido-cafes {
+    padding: 1rem;
+}
+
+.contacta {
+    padding: 4rem 0;
+    background-color: var(--color-secundary);
+}
+
+.contacta h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+form button:hover{
+    background-color:rgba(74,63,53,0.5);
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.rrss {
+    margin-top: 1rem;
+}
+
+.rrss a {
+    color:var(--color-background);
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.rrss a:hover{
+    color:var(--color-secundary);
+}

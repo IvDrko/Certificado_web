@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Paloma Montero</title>       
+        <title>Café Aroma (mio)</title>       
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link href="estilos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="encabezado">
-            <nav>
-                <p>Inicio</p>
-                <p>Menú</p>
-                <p>Contacto</p>
-            </nav>
-        </div>
-        <div class="fondo-imagen">
-            <h1>Café Aroma</h1>
-            <p>Descubre el placer de un buen café</p>
-        </div>
-        <div class="cafes">
-            <h2>Nuestros Favoritos</h2>
-            <div class="tarjeta">
-                <img>
-                <div class="texto">
-                    <h2>Espresso</h2>
-                    <p>Intenso y aromático, perfecto para los amantes del café fuerte.</p>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#contacta">Contacto</a>
+        </nav>
+        <header class="fondo-imagen" id="inicio">
+            <div class="contenido-imagen">
+                <h1>Café Aroma</h1>
+                <p>Descubre el placer de un buen café</p>
+            </div>
+        </header>
+        <section class="contenedor" id="menu">
+            <div class="cafes">
+                <h2>Nuestros Favoritos</h2>
+                <div class="tarjeta-grid">
+                    <div class="tarjeta">
+                        <img src="https://cafearoma.netlify.app/img/expreso.jpeg" alt="Espresso">
+                        <div class="contenido-cafes">
+                            <h3>Espresso</h3>
+                            <p>Intenso y aromático, perfecto para los amantes del café fuerte.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://cafearoma.netlify.app/img/capuchino.jpeg" alt="Cappuccino">
+                        <div class="contenido-cafes">
+                            <h3>Cappuccino</h3>
+                            <p>Equilibrio perfecto entre espresso, leche vaporizada y espuma.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="https://cafearoma.netlify.app/img/late.jpeg" alt="Latte">
+                        <div class="contenido-cafes">
+                            <h3>Latte</h3>
+                            <p>Suave y cremoso, ideal para quienes prefieren un café más ligero.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="tarjeta">
-                <img>
-                <div class="texto">
-                    <h2>Cappuccino</h2>
-                    <p>Equilibrio perfecto entre espresso, leche vaporizada y espuma.</p>
-                </div>
+        </section>
+        <section class="contacta" id="contacta">
+            <div class="contenedor">
+                <h2>Contáctanos</h2>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <div class="tarjeta">
-                <img>
-                <div class="texto">
-                    <h2>Latte</h2>
-                    <p>Suave y cremoso, ideal para quienes prefieren un café más ligero.</p>
-                </div>
-            </div>
-        </div>
-        <div class="contacta">
-            <h2>Contáctanos</h2>
-            <form>
-                <input type="text" id="name" name="name" placeholder="Nombre" required>
-                <input type="text" id="email" name="email" placeholder="Email" required>
-                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" cols="4" rows="10" required></textarea>
-                <button>Enviar</button>
-            </form>
-        </div>
+        </section>
         <footer>
             <p>© 2024 Café Aroma. Todos los derechos reservados.</p>
             <div class="rrss">
-                <a><img></a>
-                <a><img></a>
-                <a><img></a>
+                <a href="#" aria-label="Facebook"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </div>
         </footer>
     </body>
