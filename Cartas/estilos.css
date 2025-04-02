@@ -1,0 +1,49 @@
+.tablero{
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    background-color: aliceblue;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    position: relative;
+    width: 100px;
+    height: 140px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.card .front {
+    background-color: #e9ff98;
+    color: #333;
+     /* La parte frontal se ve por defecto */
+}
+
+.card .back {
+    background-color: #0073e6; /* La parte posterior comienza oculta */
+}
+
+/* Cuando la carta tiene la clase 'flipped', se voltea */
+.card.flipped .front {
+    transform: rotateY(0deg);  /* Volteamos la parte frontal */
+}
+
+.card.flipped .back {
+    transform: rotateY(180deg);    /* Hacemos visible la parte trasera */
+}

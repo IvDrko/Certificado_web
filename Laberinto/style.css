@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color:tomato;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 30px;
+    color: coral;
+}
+
+#tablero{
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    justify-content: center;
+}
+
+.celda {
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+.muro {
+    background-color: #333;
+}
+
+.meta {
+    background-color: #0f0;
+}
+
+.jugador {
+    background-color: #00f;
+}
