@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Pizza</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    #pizza {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: #f3c6a1;
+      margin: 20px auto;
+      position: relative;
+    }
+    .ingredient {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .ingredient.pepperoni {
+      background-color: #ff0000;
+    }
+    .ingredient.cheese {
+      background-color: #ffeb3b;
+    }
+    .ingredient.mozzarella {
+      background-color: #f1bebe;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    #ingredientsList{
+        text-decoration: none;
+        padding-left: 0;
+    }
+  </style>
+</head>
+<body>
+    <h1>Haz tu pizza</h1>
+    <div id="pizza"></div>
+
+    <div>
+        <h3>Ingredientes a agregar</h3>
+        <button onclick="addIngredient('cheese')">Queso</button>
+        <button onclick="addIngredient('pepperoni')">Pepperoni</button>
+        <button onclick="addIngredient('mozzarella')">Mozzarella</button>
+    </div>
+
+    <div>
+        <h3>Ingredientes en tu pizza</h3>
+        <ul id="ingredientsList"></ul>
+    </div>
+
+    <script src="pizzaGame.js"></script>
+</body>
+</html>
